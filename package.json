@@ -1,1 +1,1 @@
-{ "dependencies": { "postcss-cli": "8.3.1", "postcss": "8.2.9", "autoprefixer": "10.2.5" } }
+{"dependencies":{"autoprefixer":"10.2.5","postcss":"^8.4.21","postcss-cli":"8.3.1"}}
