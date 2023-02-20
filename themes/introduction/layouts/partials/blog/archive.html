@@ -19,7 +19,7 @@
         {{ if .Params.date }}
         <span>{{ .Date.Format (.Site.Params.dateFormat | default ":date_medium") }}</span> -
         {{ end }}
-        <span><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></span>
+        <span><a href="{{ .RelPermalink}}">{{ .Title | markdownify }}</a></span>
     </li>
     {{ $prev = $curr}}
     {{end}}

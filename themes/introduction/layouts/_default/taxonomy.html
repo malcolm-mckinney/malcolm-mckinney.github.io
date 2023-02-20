@@ -8,12 +8,12 @@
         {{ range .Pages.ByPublishDate.Reverse }}
         {{ if .Date }}
         <li>
-            <a href="{{ .Permalink }}">{{ .Date.Format (.Site.Params.dateFormat | default ":date_medium") }} |
+            <a href="{{ .RelPermalink}}">{{ .Date.Format (.Site.Params.dateFormat | default ":date_medium") }} |
                 {{ .Title | markdownify }}</a>
         </li>
         {{ else }}
         <li>
-            <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+            <a href="{{ .RelPermalink}}">{{ .Title | markdownify }}</a>
         </li>
         {{ end }}
         {{ end }}
