@@ -15,7 +15,7 @@ DefaultContentLanguage = 'en'
     [[params.social]]
         name = 'instagram'
         icon_pack = 'fa-instagram'
-        url = 'https://instagram.com/m.shinjuku'
+        url = '//instagram.com/m.shinjuku'
 
     [[params.social]]
         icon = 'github'
