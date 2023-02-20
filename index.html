@@ -17,7 +17,7 @@ Malcolm MC Kinney
 <meta property="og:url" content="/">
 <meta property="og:site_name" content="Malcolm McKinney">
 <meta property="og:image" content="/home/profile.jpg">
-<link rel=stylesheet href=/css/main.min.36f9d8263432beffbd6094f57fb28719ed0c231274aff928d0a0f8820a88d26f.css integrity="sha256-NvnYJjQyvv+9YJT1f7KHGe0MIxJ0r/ko0KD4ggqI0m8=" crossorigin=anonymous media=screen>
+<link rel=stylesheet href=/css/main.min.509760da50e9907e4e272f9189f62076a47442f24299e61e5237ef77e78c4224.css integrity="sha256-UJdg2lDpkH5OJy+RifYgdqR0QvJCmeYeUjfvd+eMQiQ=" crossorigin=anonymous media=screen>
 <link rel=stylesheet href=/styles/owlCarousel.min.b1f26e29c43c61fe8b5a6f225b4ee7c5f969a7b33cfe512706271e07246d93d1.css integrity="sha256-sfJuKcQ8Yf6LWm8iW07nxflpp7M8/lEnBiceByRtk9E=" crossorigin=anonymous media=screen>
 </head>
 <body>
@@ -33,6 +33,18 @@ Hi, I&rsquo;m Malcolm
 </div>
 <div class="fade-in three">
 <div class=social-icons>
+<a href>
+<i class="fab fab fa-linkedin"></i>
+</a>
+<a href>
+<i class="fab fab fa-github"></i>
+</a>
+<a href=https://instagram.com/m.shinjuku>
+<i class="fab fab fa-"></i>
+</a>
+<a href=mailto:contact@malcolmmckinney.com>
+<i class="fas fab fa-paper-plane"></i>
+</a>
 </div>
 </div>
 </div>
@@ -63,11 +75,11 @@ Hi, I&rsquo;m Malcolm
 <img class="img-responsive avatar" src=/home/profile_hu269983e4a998f578f511b73f3df940fb_643550_320x0_resize_q75_box.jpg alt=profile.jpg>
 </div>
 <div class="markdown column">
-<p>Hello again! Malcolm here!
-To start, I&rsquo;m from North Carolina in the US and I graduated from Cornell University in 2015 with Bachelors of Arts in Computer Science.
-Regarding my professional experience, I have worked on a variety of software engineering projects at Apple, Wayfair, Amazon, and LINE.
-I currently am based in Tokyo, Japan, where I have been living for the past seven years. Living and working abroad has definitely been an adventure.
-I enjoy a mix of domestic (Japan) and international travel, art and history museums, learning Japanese, restaurants, wineries, and as you can see most recently winter sports!</p>
+<p>Hello again — Malcolm here!
+To start, I&rsquo;m from North Carolina in the US and I graduated from Cornell University in 2015 with a Bachelors of Arts in Computer Science.
+Regarding my professional experience, I have worked on a variety of software engineering projects at companies such as Apple, Wayfair, Amazon, and LINE.
+I am currently based in Tokyo, Japan, where I have been living for the past seven years. Living and working abroad has definitely been an exciting adventure!
+I enjoy a mix of domestic (Japan) and international travel, art and history museums, learning Japanese, restaurants, wineries, and, as you can see, most recently winter sports!</p>
 </div>
 </div>
 </div>
@@ -85,7 +97,23 @@ I enjoy a mix of domestic (Japan) and international travel, art and history muse
 <h2 class="title is-2">Contact</h2>
 <div class=markdown>
 </div>
+<p>My current local time is <span id=time></span>.</p>
+<h3 class="subtitle is-3 has-text-centered top-pad">
+<a href=mailto:contact@malcolmmckinney.com>contact@malcolmmckinney.com</a>
+</h3>
 <div class=social-icons>
+<a href>
+<i class="fab fab fa-linkedin"></i>
+</a>
+<a href>
+<i class="fab fab fa-github"></i>
+</a>
+<a href=https://instagram.com/m.shinjuku>
+<i class="fab fab fa-"></i>
+</a>
+<a href=mailto:contact@malcolmmckinney.com>
+<i class="fas fab fa-paper-plane"></i>
+</a>
 </div>
 </div>
 <div class="container has-text-centered top-pad">
@@ -106,5 +134,6 @@ I enjoy a mix of domestic (Japan) and international travel, art and history muse
 </div>
 <script src=/js/bundle.f1741e9868b2f697e71cf8fccfcc12166540999b3d36f8fb9edd0882ba425d55.js integrity="sha256-8XQemGiy9pfnHPj8z8wSFmVAmZs9Nvj7nt0IgrpCXVU="></script>
 <script src=/js/bundleOwlCarousel.bc6b73f0a36bf19c70c5df8fc352d322988ca2bc40743fb836ee7371d555c28a.js integrity="sha256-vGtz8KNr8Zxwxd+Pw1LTIpiMorxAdD+4Nu5zcdVVwoo="></script>
+<script>function update_localtime(){const a=(new Date).toLocaleTimeString('en-US',{timeZone:'America/Los_Angeles',timeStyle:'short'});document.getElementById('time').innerHTML=a}update_localtime(),setInterval(update_localtime,1e3)</script>
 </body>
 </html>
