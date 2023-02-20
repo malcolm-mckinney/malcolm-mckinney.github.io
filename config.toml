@@ -7,11 +7,6 @@ DefaultContentLanguage = 'en'
 [params]
     themeStyle = 'auto'
 
-    [params.home]
-        localTime = true
-        timeZone = 'Asia/Tokyo'
-        timeFormat = 'en-US'
-
     [[params.social]]
         icon = 'linkedin'
         icon_pack = 'fab'
@@ -19,7 +14,7 @@ DefaultContentLanguage = 'en'
 
     [[params.social]]
         name = 'instagram'
-        icon_pack = 'fa'
+        icon_pack = 'fa-instagram'
         url = 'https://instagram.com/m.shinjuku'
 
     [[params.social]]
