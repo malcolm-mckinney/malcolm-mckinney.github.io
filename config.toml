@@ -2,3 +2,35 @@ baseURL = 'https://www.malcolmmckinney.com/'
 languageCode = 'en-us'
 title = 'Malcolm McKinney'
 theme = 'introduction'
+DefaultContentLanguage = 'en'
+
+[params]
+    themeStyle = 'auto'
+    email  = 'contact@malcolmmckinney.com'
+
+    [params.home]
+        localTime = true
+        timeZone = 'America/Los_Angeles'
+        timeFormat = 'en-US'
+
+    [[params.social]]
+        icon = 'linkedin'
+        icon_pack = 'fab'
+        link = '//linkedin.com/in/malcolmmckinney/'
+
+    [[params.social]]
+        icon = 'github'
+        icon_pack = 'fab'
+        link = '//github.com/malcolm-mckinney'
+
+    [[params.social]]
+        name = 'instagram'
+        icon_pack = 'fab'
+        url = 'https://instagram.com/m.shinjuku'
+
+    [[params.social]]
+        icon = 'paper-plane'
+        icon_pack = 'fas'
+        url = 'mailto:contact@malcolmmckinney.com'
+
+
