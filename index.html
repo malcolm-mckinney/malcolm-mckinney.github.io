@@ -16,9 +16,12 @@ Malcolm MC Kinney
 <meta property="og:description" content>
 <meta property="og:url" content="/">
 <meta property="og:site_name" content="Malcolm McKinney">
+<meta property="og:image" content="/home/oarai.jpg">
 <meta property="og:image" content="/home/profile.jpg">
 <link rel=stylesheet href=/css/main.min.509760da50e9907e4e272f9189f62076a47442f24299e61e5237ef77e78c4224.css integrity="sha256-UJdg2lDpkH5OJy+RifYgdqR0QvJCmeYeUjfvd+eMQiQ=" crossorigin=anonymous media=screen>
+<link rel=stylesheet href=/css/form-reset.css integrity crossorigin=anonymous media=screen>
 <link rel=stylesheet href=/styles/owlCarousel.min.b1f26e29c43c61fe8b5a6f225b4ee7c5f969a7b33cfe512706271e07246d93d1.css integrity="sha256-sfJuKcQ8Yf6LWm8iW07nxflpp7M8/lEnBiceByRtk9E=" crossorigin=anonymous media=screen>
+<link rel=stylesheet href=/css/form-reset.min.03643f4ce3cbe4a91d457ad60c53869725eb7a126a0c2aa78d99a9c3cdf6c6cc.css integrity="sha256-A2Q/TOPL5KkdRXrWDFOGlyXrehJqDCqnjZmpw832xsw=">
 </head>
 <body>
 <section id=top class="hero is-fullheight">
@@ -78,7 +81,7 @@ Hi, I&rsquo;m Malcolm
 <p>Hello again — Malcolm here!</p>
 <p>Let me briefly introduce myself. I am originally from North Carolina, a state which lies in the southern part of the United States. In 2015, I graduated from <a href=https://www.cornell.edu/>Cornell University</a> with a Bachelors of Arts in <a href=https://www.cs.cornell.edu/undergrad/csmajor>Computer Science</a>.
 Regarding my professional experience, I have worked on a variety of software engineering projects at companies such as <a href=https://www.apple.com/>Apple</a>, <a href=https://www.wayfair.com/>Wayfair</a>, <a href=https://www.amazon.co.jp/>Amazon Japan</a>, and <a href=https://line.me/en/>LINE</a>.
-Additionally, some of my work has even been featured in news sites such as <a href=https://bit.ly/3RUZi6S>TechCrunch Japan</a>! Anyone who would like to know a bit more about my academic and work history, please feel free to have a look at the most recent version of my <a href=./Malcolm_McKinney_Resume.pdf>résumé</a>.</p>
+Some of my work has even been featured in news sites like <a href=https://bit.ly/3RUZi6S>TechCrunch Japan</a>! Anyone who would like to know a bit more about my academic and work history, please feel free to have a look at the most recent version of my <a href=Malcolm_McKinney_Resume.pdf>résumé</a>.</p>
 <p>Currently, I am based in Tokyo, Japan, where I have been a resident for the past seven years. Living and working abroad has always been a dream of mine and every day has certainly been an adventure!
 I enjoy a mix of domestic (Japan) and international travel, art and history museums, learning Japanese, amateur photography, wine tasting, and — as you can see — most recently winter sports!
 Please don&rsquo;t hesitate to drop me an <a href=mailto:contact@malcolmmckinney.com>email</a> or send me a message on <a href=https://www.linkedin.com/in/malcolmmckinney/>LinkedIn</a> if you&rsquo;d like to get in touch with me!</p>
@@ -98,6 +101,26 @@ Please don&rsquo;t hesitate to drop me an <a href=mailto:contact@malcolmmckinney
 <div class="container has-text-centered">
 <h2 class="title is-2">Contact</h2>
 <div class=markdown>
+<p>Please fill out the form below if there is anything you&rsquo;d like to chat about and I&rsquo;ll get back to you as soon as I can!</p>
+</div>
+<div class=container>
+<div>
+<form id=fs-frm name=simple-contact-form accept-charset=utf-8 action=https://formspree.io/f/mgebkybr enctype=multipart/form-data method=post>
+<fieldset id=fs-frm-inputs>
+<label for=full-name>Full Name</label>
+<input type=text name=name id=full-name placeholder="First and Last" required>
+<label for=email-address>Email Address</label>
+<input type=email name=_replyto id=email-address placeholder=your@email.com required>
+<label for=subject>Subject</label>
+<input id=subject name=subject value>
+<label for=message>Message</label>
+<textarea rows=5 name=message id=message placeholder required></textarea>
+<label for=file>Attach a File (Optional):</label><input id=file type=file name=upload>
+<input type=hidden name=_subject id=email-subject value="Contact Form Submission">
+</fieldset>
+<input type=submit value=Send>
+</form>
+</div>
 </div>
 <div class=social-icons>
 <a href>
