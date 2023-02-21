@@ -14,14 +14,14 @@ DefaultContentLanguage = 'en'
         url = '//linkedin.com/in/malcolmmckinney/'
 
     [[params.social]]
-        name = 'instagram'
-        icon_pack = 'fa-instagram'
-        url = '//instagram.com/m.shinjuku'
-
-    [[params.social]]
         icon = 'github'
         icon_pack = 'fab'
         url = '//github.com/malcolm-mckinney'
+
+    [[params.social]]
+        name = 'instagram'
+        icon_pack = 'fa-instagram'
+        url = '//instagram.com/m.shinjuku'
 
     [[params.social]]
         icon = 'envelope'
