@@ -6,6 +6,7 @@ DefaultContentLanguage = 'en'
 
 [params]
     themeStyle = 'auto'
+    customCSS = ['/css/form-reset.css']
 
     [[params.social]]
         icon = 'linkedin'

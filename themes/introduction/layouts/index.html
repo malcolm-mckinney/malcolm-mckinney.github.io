@@ -8,6 +8,9 @@
         {{ partial "head/favicons.html" . }}
         {{ partial "head/css.html" . }}
         {{ partial "css/owlCarousel.html" . }}
+        {{ $css := resources.Get "css/form-reset.css" }}
+        {{ $styles := $css | toCSS | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
     </head>
 
     <body>
@@ -106,6 +109,11 @@
                 <div class="markdown">
                     {{ .Content }}
                 </div>
+
+                <div class="container">
+                    {{ partial "home/contact-form.html" . }}
+                </div>
+
                 {{ if .Site.Params.home.localTime }}
                 <p>{{ i18n "index_currentTime" . }} <span id="time"></span>.</p>
                 {{ end }}
