@@ -1,6 +1,6 @@
 baseURL = 'https://www.malcolmmckinney.com/'
 languageCode = 'en-us'
-title = 'Malcolm McKinney'
+title = 'Malcolm\'s portfolio'
 theme = 'introduction'
 DefaultContentLanguage = 'en'
 
@@ -11,7 +11,7 @@ DefaultContentLanguage = 'en'
     [[params.social]]
         icon = 'linkedin'
         icon_pack = 'fab'
-        link = '//linkedin.com/in/malcolmmckinney/'
+        url = '//linkedin.com/in/malcolmmckinney/'
 
     [[params.social]]
         name = 'instagram'
