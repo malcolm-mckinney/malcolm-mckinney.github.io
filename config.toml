@@ -21,7 +21,7 @@ DefaultContentLanguage = 'en'
     [[params.social]]
         icon = 'github'
         icon_pack = 'fab'
-        link = '//github.com/malcolm-mckinney'
+        url = '//github.com/malcolm-mckinney'
 
     [[params.social]]
         icon = 'envelope'
