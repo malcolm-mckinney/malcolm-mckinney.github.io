@@ -1,6 +1,6 @@
 baseURL = 'https://www.malcolmmckinney.com/'
 languageCode = 'en-us'
-title = 'Malcolm\'s portfolio'
+title = '''Malcolm's portfolio'''
 theme = 'introduction'
 DefaultContentLanguage = 'en'
 
