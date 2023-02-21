@@ -10,5 +10,5 @@ Regarding my professional experience, I have worked on a variety of software eng
 Some of my work has even been featured in news sites like [TechCrunch Japan](https://bit.ly/3RUZi6S)! Anyone who would like to learn a bit more about my academic and work history, please feel free to have a look at the most recent version of my [résumé](Malcolm_McKinney_Resume.pdf).
 
 Currently, I am based in Tokyo, Japan, where I have been a resident for the past seven years. Living and working abroad has always been a dream of mine and every day has certainly been an adventure!
-I enjoy a mix of domestic (Japan) and international travel, art and history museums, learning Japanese, amateur photography, wine tasting, and — as you can see — most recently winter sports!
+I enjoy a mix of domestic and international travel (I've visited 20 countries so far), art and history museums, weightlifting, learning Japanese, amateur photography, wine tasting, and — as you can see — most recently winter sports!
 Please don't hesitate to drop me an [email](mailto:contact@malcolmmckinney.com) or send me a message on [LinkedIn](https://www.linkedin.com/in/malcolmmckinney/) if you'd like to get in touch with me!
