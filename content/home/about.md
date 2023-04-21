@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 image: "profile.jpg"
-weight: 8
+weight: 1
 ---
 Hello again — Malcolm here!
 
