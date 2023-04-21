@@ -1,0 +1,93 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="chrome=1">
+<meta name=HandheldFriendly content="True">
+<meta name=MobileOptimized content="320">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=referrer content="no-referrer">
+<title>
+Over the Counter Class I Medicines - Malcolm — Software Engineer
+</title>
+<meta property="og:title" content="Over-The-Counter Class I Medicines - Malcolm — Software Engineer">
+<meta property="og:type" content="website">
+<meta property="og:description" content>
+<meta property="og:url" content="/projects/classonemedicines/">
+<meta property="og:site_name" content="Malcolm — Software Engineer">
+<meta property="og:image" content="/home/profile.jpg">
+<link rel=stylesheet href=/css/main.min.509760da50e9907e4e272f9189f62076a47442f24299e61e5237ef77e78c4224.css integrity="sha256-UJdg2lDpkH5OJy+RifYgdqR0QvJCmeYeUjfvd+eMQiQ=" crossorigin=anonymous media=screen>
+<link rel=stylesheet href=/css/form-reset.css integrity crossorigin=anonymous media=screen>
+<link rel=stylesheet href=/styles/owlCarousel.min.b1f26e29c43c61fe8b5a6f225b4ee7c5f969a7b33cfe512706271e07246d93d1.css integrity="sha256-sfJuKcQ8Yf6LWm8iW07nxflpp7M8/lEnBiceByRtk9E=" crossorigin=anonymous media=screen>
+</head>
+<body>
+<section id=top class=section>
+<div class="container hero fade-in one">
+<h1 class="bold-title is-1">Over-The-Counter Class I Medicines</h1>
+</div>
+<div class="section fade-in two">
+<div class=container>
+<hr>
+<nav class=navbar role=navigation aria-label="main navigation">
+<a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span>
+</a>
+<div class=navbar-menu id=navMenu>
+<a class=navbar-item href=/>main</a>
+<a class=navbar-item href=/projects/>
+Back to Projects
+</a>
+<a class=navbar-item href=/#about>About Me</a>
+<a class=navbar-item href=/#contact>Let&rsquo;s connect!</a>
+</div>
+</nav>
+<hr>
+</div>
+<div class="container markdown top-pad">
+<p>Back in 2016, there were not many easy and convenient ways to order over-the-counter class one medicines online in Japan.
+To explain briefly, class one is a special designation of drug, in which a pharmacist must approve the use of before sale.</p>
+<p>The general flow is such: if one is experiencing symptoms of disease, he or she would first would go to a doctor to correctly diagnose the issue.
+The doctor, after performing tests on the patient, would, in turn, present to the patient a script, which would be presented to a pharmacist.
+Once the script has been handed over, the pharmacist would double-check the drugs and dosages and finally give the patient the required drugs.
+Going through this process is, indeed, time-intensive and moreover, the patient can become quite distressed especially if the illness is a sensitive matter.
+I firmly believe that doctors and pharmacists alike should never shame or berate their patients for their illnesses or situations, but sadly this is not always the case.
+I am proud to have worked on a project that helps people to get the medical help that they need anonymously and online&ndash;and&ndash;without shame.</p>
+<p>If you ponder a bit, an interesting question begins to emerge: how would you automate a manual process like this?</p>
+<p>Legally, such a process can not be fully automated, precisely because a licensed pharmacist must be involved strictly before the drugs are distributed to the customer.
+In order to satisfy the legal requirements, Amazon Japan had to hire several pharmacists full time just for this project.
+What can be automated, however, is the creation and transmission of a patient&rsquo;s medical data for review by pharmacists.</p>
+<p>My direct involvement in this project was the creation of the mobile and desktop questionnaire page in which the customer can fill out the relevant and required medical information for pharmacist review.</p>
+<p>In order for the questionnaire to be successfully injected into the checkout pipeline, a new attribute had to be created for ASINs with the class one medicine designation.
+During the checkout process, if the customer has any products with the OVER_THE_COUNTER_CLASS_ONE attribute set to &ldquo;true&rdquo;, a hook is triggered and the customer is redirected to the medical questionnaire page.</p>
+<p>As you can see in the video below, the medical questionnaire has front-end JavaScript validation to mitigate mistakes before submission.
+Upon submission, although there are not the same kind of HIPPA-style laws in Japan as there are in the United States, it is necessary to comply with Amazon&rsquo;s customer data policy. Therefore, the customer&rsquo;s medical data was to be stored encrypted in a secured database.
+As soon as the customer&rsquo;s medical data is submitted and becomes available in the database, the medical information can be seen by the pharmacists on their internal management system that our team created.
+If there are no concerns with the information provided by the customer, the pharmacists can approve the order and the medicines will be shipped to the customer.</p>
+<p>Just only a few days after we soft-launched this service, to our surprise, TechCrunch Japan reported on the new feature and questioned whether this is a sign that Amazon would become a huge player in online medicine space.
+Given how our world has changed so much only a mere four years later, it is very likely that more automation in medicine will come in the near future. Whether Amazon will be the one to invest in lead this undertaking is a topic of much intrigue.</p>
+</div>
+<div class=container>
+<hr>
+</div>
+<div class="container has-text-centered top-pad">
+<a href=#top>
+<i class="fa fa-arrow-up"></i>
+</a>
+</div>
+<div class=container>
+<hr>
+</div>
+<div class=section id=footer>
+<div class="container has-text-centered">
+<span class=footer-text>
+<a href=https://github.com/victoriadrake/hugo-theme-introduction/><strong>Introduction</strong></a> theme for <a href=http://gohugo.io/>Hugo</a>. Made with <a href=https://victoria.dev> and </a> by open source contributors.
+</span>
+</div>
+</div>
+</div>
+</section>
+<script src=/js/bundle.f1741e9868b2f697e71cf8fccfcc12166540999b3d36f8fb9edd0882ba425d55.js integrity="sha256-8XQemGiy9pfnHPj8z8wSFmVAmZs9Nvj7nt0IgrpCXVU="></script>
+<script src=/js/bundleOwlCarousel.bc6b73f0a36bf19c70c5df8fc352d322988ca2bc40743fb836ee7371d555c28a.js integrity="sha256-vGtz8KNr8Zxwxd+Pw1LTIpiMorxAdD+4Nu5zcdVVwoo="></script>
+</body>
+</html>
