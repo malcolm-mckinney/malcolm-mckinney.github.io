@@ -1,13 +1,12 @@
 ---
-title: "Index" # Title of your project
+title: "Connect Authors" # Title of your project
 date: 2023-04-21T19:24:44+09:00
-weight: 0 # Order in which to show this project on the home page
+weight: 3 # Order in which to show this project on the home page
 external_link: "" # Optional external link instead of modal
 resources:
     - src: plant.jpg
       params:
           weight: -100 # Optional weighting for a specific image in this project folder
-draft: true
 ---
 In 2021, one of the pain points my new team I joined was having was that sticker, emoji, and theme creators needed a way to link their accounts for the purpose of giving recommendations to customers.
 

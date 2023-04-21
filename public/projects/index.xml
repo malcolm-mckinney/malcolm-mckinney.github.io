@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Malcolm — Software Engineer</title>
-    <link>https://www.malcolmmckinney.com/</link>
-    <description>Recent content on Malcolm — Software Engineer</description>
+    <title>Projects on Malcolm — Software Engineer</title>
+    <link>https://www.malcolmmckinney.com/projects/</link>
+    <description>Recent content in Projects on Malcolm — Software Engineer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Apr 2023 19:30:01 +0900</lastBuildDate><atom:link href="https://www.malcolmmckinney.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Apr 2023 19:30:01 +0900</lastBuildDate><atom:link href="https://www.malcolmmckinney.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Over-The-Counter Class I Medicines</title>
       <link>https://www.malcolmmckinney.com/projects/classonemedicines/</link>
