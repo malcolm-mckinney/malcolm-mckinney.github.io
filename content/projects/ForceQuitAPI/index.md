@@ -6,7 +6,7 @@ external_link: "" # Optional external link instead of modal
 resources:
     - src: "force-quit.png"
       params:
-          weight: -100 # Optional weighting for a specific image in this project folder
+          weight: 1 # Optional weighting for a specific image in this project folder
 ---
 Continuing for about a decade at LINE, after a developer initiated a deployment (build, restart, rsync operation) in error or if said deployment was hanging or stuck (running for several hours with no progress), there was no automated way to force quit the process.
 In other words, in order for a developer to terminate his or her ongoing build, he or she must contact the Delivery Infrastructure team on Slack and make a request for them to SSH into the machine responsible for deployment (PMC) and kill the process.
