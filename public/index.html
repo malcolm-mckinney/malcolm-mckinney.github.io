@@ -253,6 +253,19 @@ Please don&rsquo;t hesitate to drop me an <a href="mailto:contact@malcolmmckinne
                 <div class="column is-one-third">
                     <div class="card" data-target="#project-0">
                         
+                        <div class="card-image">
+                            <figure class="image is-3by2">
+                                <a >
+                                    
+                                    
+                                    
+                                    <img class="card-thumbnail" src="/projects/classonemedicines/loxonin_hub5bf5f160a1b048213d49601e4957b19_292429_302x0_resize_q75_box.jpg" alt ="loxonin.jpg">
+                                    
+                                    
+                                </a>
+                            </figure>
+                        </div>
+                        
                         <div class="card-content has-text-centered top-pad">
                             <h1><a >
                                 Over-The-Counter Class I Medicines
@@ -268,6 +281,19 @@ Please don&rsquo;t hesitate to drop me an <a href="mailto:contact@malcolmmckinne
                 <div class="column is-one-third">
                     <div class="card" data-target="#project-1">
                         
+                        <div class="card-image">
+                            <figure class="image is-3by2">
+                                <a >
+                                    
+                                    
+                                    
+                                    <img class="card-thumbnail" src="/projects/forcequitapi/force-quit_hu7355e133d5166800de685d274e15d6de_230422_302x0_resize_box_3.png" alt ="force-quit.png">
+                                    
+                                    
+                                </a>
+                            </figure>
+                        </div>
+                        
                         <div class="card-content has-text-centered top-pad">
                             <h1><a >
                                 Force Quit API
@@ -282,6 +308,19 @@ Please don&rsquo;t hesitate to drop me an <a href="mailto:contact@malcolmmckinne
                 
                 <div class="column is-one-third">
                     <div class="card" data-target="#project-2">
+                        
+                        <div class="card-image">
+                            <figure class="image is-3by2">
+                                <a >
+                                    
+                                    
+                                    
+                                    <img class="card-thumbnail" src="/projects/connectauthors/graph_hu273678a30a0e00167b4292a221145e9c_25395_302x0_resize_box_3.png" alt ="graph.png">
+                                    
+                                    
+                                </a>
+                            </figure>
+                        </div>
                         
                         <div class="card-content has-text-centered top-pad">
                             <h1><a >
@@ -311,6 +350,16 @@ Please don&rsquo;t hesitate to drop me an <a href="mailto:contact@malcolmmckinne
             
             <section class="modal-card-body markdown">
                 
+                
+                
+                    
+                        
+                        
+                            <img src="/projects/classonemedicines/loxonin_hub5bf5f160a1b048213d49601e4957b19_292429_640x0_resize_q75_box.jpg" class="img-responsive" alt="loxonin.jpg">
+                        
+                    
+                
+                
                 <p>Back in 2016, there were not many easy and convenient ways to order over-the-counter class one medicines online in Japan.
 To explain briefly, class one is a special designation of drug, in which a pharmacist must approve the use of before sale.</p>
 <p>The general flow is such: if one is experiencing symptoms of disease, he or she would first would go to a doctor to correctly diagnose the issue.
@@ -323,11 +372,18 @@ I am proud to have worked on a project that helps people to get the medical help
 <p>Legally, such a process can not be fully automated, precisely because a licensed pharmacist must be involved strictly before the drugs are distributed to the customer.
 In order to satisfy the legal requirements, Amazon Japan had to hire several pharmacists full time just for this project.
 What can be automated, however, is the creation and transmission of a patient&rsquo;s medical data for review by pharmacists.</p>
+<p><img src="images/ClassOneMedicines/desktop-questionnaire.png" alt="Desktop Questionnaire"></p>
 <p>My direct involvement in this project was the creation of the mobile and desktop questionnaire page in which the customer can fill out the relevant and required medical information for pharmacist review.</p>
 <p>In order for the questionnaire to be successfully injected into the checkout pipeline, a new attribute had to be created for ASINs with the class one medicine designation.
 During the checkout process, if the customer has any products with the OVER_THE_COUNTER_CLASS_ONE attribute set to &ldquo;true&rdquo;, a hook is triggered and the customer is redirected to the medical questionnaire page.</p>
-<p>As you can see in the video below, the medical questionnaire has front-end JavaScript validation to mitigate mistakes before submission.
-Upon submission, although there are not the same kind of HIPPA-style laws in Japan as there are in the United States, it is necessary to comply with Amazon&rsquo;s customer data policy. Therefore, the customer&rsquo;s medical data was to be stored encrypted in a secured database.
+<video class="video-shortcode" preload="auto" controls>
+    <source src="/mobile-questionnaire.mp4" type="video/mp4">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+
+<p>As you can see in the video above, the medical questionnaire has front-end JavaScript validation to mitigate mistakes before submission.
+Upon submission, although there are not the same kind of HIPPA-style laws in Japan as there are in the United States, it is still necessary to comply with Amazon&rsquo;s customer data policy. Therefore, the customer&rsquo;s medical data was to be stored encrypted in a secured database.
 As soon as the customer&rsquo;s medical data is submitted and becomes available in the database, the medical information can be seen by the pharmacists on their internal management system that our team created.
 If there are no concerns with the information provided by the customer, the pharmacists can approve the order and the medicines will be shipped to the customer.</p>
 <p>Just only a few days after we soft-launched this service, to our surprise, TechCrunch Japan reported on the new feature and questioned whether this is a sign that Amazon would become a huge player in online medicine space.
@@ -350,6 +406,16 @@ Given how our world has changed so much only a mere four years later, it is very
             
             
             <section class="modal-card-body markdown">
+                
+                
+                
+                    
+                        
+                        
+                            <img src="/projects/forcequitapi/force-quit_hu7355e133d5166800de685d274e15d6de_230422_640x0_resize_box_3.png" class="img-responsive" alt="force-quit.png">
+                        
+                    
+                
                 
                 <p>Continuing for about a decade at LINE, after a developer initiated a deployment (build, restart, rsync operation) in error or if said deployment was hanging or stuck (running for several hours with no progress), there was no automated way to force quit the process.
 In other words, in order for a developer to terminate his or her ongoing build, he or she must contact the Delivery Infrastructure team on Slack and make a request for them to SSH into the machine responsible for deployment (PMC) and kill the process.</p>
@@ -416,6 +482,16 @@ With the processId, we can use the above script to finally kill the process.</p>
             
             <section class="modal-card-body markdown">
                 
+                
+                
+                    
+                        
+                        
+                            <img src="/projects/connectauthors/graph_hu273678a30a0e00167b4292a221145e9c_25395_640x0_resize_box_3.png" class="img-responsive" alt="graph.png">
+                        
+                    
+                
+                
                 <p>In 2021, one of the pain points my new team I joined was having was that sticker, emoji, and theme creators needed a way to link their accounts for the purpose of giving recommendations to customers.</p>
 <p>For example, let&rsquo;s consider the company &lsquo;Sanrio&rsquo; which owns the intellectual property of Hello Kitty, Gudetama, and Peanuts.
 Whenever someone is interested in Hello Kitty stickers, we may want to also want to recommend to the customer other Sanrio products such as Gudetama.
@@ -455,17 +531,20 @@ I first looked into Neo4J, which was the one of the first graph databases that c
    }
 </code></pre><p>The above code is a sample of how to create a relationship between author and creator entities in Neo4J!</p>
 <p>I took some dummy data with 100 entities and created the below graph.</p>
+<p><img src="images/ConnectAuthors/initial-neo4j.png" alt="Initial Graph with Neo4J"></p>
 <p>To create a connection between two authors, it is as easy as the following Neo4J statement:</p>
 <pre tabindex="0"><code>MERGE (a1:Author { id: &#34;538&#34; })
 MERGE (a2:Author { id: &#34;553&#34; })
 MERGE (a1)-[:IS_SIMILAR_TO]-&gt;(a2)
 RETURN a1, a2
 </code></pre><p>And the following graph is created:</p>
+<p><img src="images/ConnectAuthors/connected-neo4j.png" alt="Connected Graph with Neo4J"></p>
 <p>To find all the connected components to an author, the following query is executed:</p>
 <pre tabindex="0"><code>MATCH (a:Author {id: &#34;3445&#34; }) -[*] - (connected)
 WHERE a &lt;&gt; connected
 RETURN distinct a, connected
 </code></pre><p>And you can find the graph of the connected components below:</p>
+<p><img src="images/ConnectAuthors/connected-components-neo4j.png" alt="Connected Components Graph with Neo4J"></p>
 <p>I made a presentation of my findings, which was well received by my department, however we later found out that the cost of Neo4J was too prohibitive for the budget and scope of the project.
 And so, I looked into a myriad of different graph databases, and I eventually came across JanusGraph.
 Over a period of a month, I created a rough system architecture using JanusGraph, created a graphical representation data using Gelphi, and wrote and delivered another presentation about my findings.</p>
@@ -579,7 +658,8 @@ Edge {
     }
   },
 ])
-</code></pre><p>You can play with the follow example using Mongo Playground <a href="https://mongoplayground.net/p/t6b6DN6Qf43">here</a></p>
+</code></pre><p><img src="images/ConnectAuthors/example-graph-with-mongodb.png" alt="Example Graph With MongoDB"></p>
+<p>You can play with the above example using Mongo Playground <a href="https://mongoplayground.net/p/t6b6DN6Qf43">here</a></p>
 <p>Unfortunately, due to poor economic conditions in the tech industry and restructuring in the company, the project was cancelled.
 Hearing this news was hard to hear after putting so much effort in the design, but I really learned so much about graph databases and I would be excited to one day use them in the future.</p>
 

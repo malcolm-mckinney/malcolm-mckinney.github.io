@@ -27,9 +27,7 @@ Connect Authors - Malcolm — Software Engineer
 
 
 
-
-<meta property="og:image" content="/home/profile.jpg"/>
-
+<meta property="og:image" content="/projects/connectauthors/graph.png"/>
 
 
 
@@ -144,6 +142,18 @@ Connect Authors - Malcolm — Software Engineer
                 
     <div class="container markdown top-pad">
         
+        <div class="has-text-centered">
+            
+            
+                
+                    
+                    
+                        <img src="/projects/connectauthors/graph_hu273678a30a0e00167b4292a221145e9c_25395_1000x0_resize_box_3.png" class="img-responsive" alt="graph.png">
+                    
+                
+            
+        </div>
+        
         <p>In 2021, one of the pain points my new team I joined was having was that sticker, emoji, and theme creators needed a way to link their accounts for the purpose of giving recommendations to customers.</p>
 <p>For example, let&rsquo;s consider the company &lsquo;Sanrio&rsquo; which owns the intellectual property of Hello Kitty, Gudetama, and Peanuts.
 Whenever someone is interested in Hello Kitty stickers, we may want to also want to recommend to the customer other Sanrio products such as Gudetama.
@@ -183,17 +193,20 @@ I first looked into Neo4J, which was the one of the first graph databases that c
    }
 </code></pre><p>The above code is a sample of how to create a relationship between author and creator entities in Neo4J!</p>
 <p>I took some dummy data with 100 entities and created the below graph.</p>
+<p><img src="images/ConnectAuthors/initial-neo4j.png" alt="Initial Graph with Neo4J"></p>
 <p>To create a connection between two authors, it is as easy as the following Neo4J statement:</p>
 <pre tabindex="0"><code>MERGE (a1:Author { id: &#34;538&#34; })
 MERGE (a2:Author { id: &#34;553&#34; })
 MERGE (a1)-[:IS_SIMILAR_TO]-&gt;(a2)
 RETURN a1, a2
 </code></pre><p>And the following graph is created:</p>
+<p><img src="images/ConnectAuthors/connected-neo4j.png" alt="Connected Graph with Neo4J"></p>
 <p>To find all the connected components to an author, the following query is executed:</p>
 <pre tabindex="0"><code>MATCH (a:Author {id: &#34;3445&#34; }) -[*] - (connected)
 WHERE a &lt;&gt; connected
 RETURN distinct a, connected
 </code></pre><p>And you can find the graph of the connected components below:</p>
+<p><img src="images/ConnectAuthors/connected-components-neo4j.png" alt="Connected Components Graph with Neo4J"></p>
 <p>I made a presentation of my findings, which was well received by my department, however we later found out that the cost of Neo4J was too prohibitive for the budget and scope of the project.
 And so, I looked into a myriad of different graph databases, and I eventually came across JanusGraph.
 Over a period of a month, I created a rough system architecture using JanusGraph, created a graphical representation data using Gelphi, and wrote and delivered another presentation about my findings.</p>
@@ -307,7 +320,8 @@ Edge {
     }
   },
 ])
-</code></pre><p>You can play with the follow example using Mongo Playground <a href="https://mongoplayground.net/p/t6b6DN6Qf43">here</a></p>
+</code></pre><p><img src="images/ConnectAuthors/example-graph-with-mongodb.png" alt="Example Graph With MongoDB"></p>
+<p>You can play with the above example using Mongo Playground <a href="https://mongoplayground.net/p/t6b6DN6Qf43">here</a></p>
 <p>Unfortunately, due to poor economic conditions in the tech industry and restructuring in the company, the project was cancelled.
 Hearing this news was hard to hear after putting so much effort in the design, but I really learned so much about graph databases and I would be excited to one day use them in the future.</p>
 
