@@ -4,7 +4,7 @@ date: 2023-04-21T19:24:44+09:00
 weight: 3 # Order in which to show this project on the home page
 external_link: "" # Optional external link instead of modal
 resources:
-    - src: "janusgraph.png"
+    - src: "simple-graph.jpeg"
       params:
           weight: 1 # Optional weighting for a specific image in this project folder
 ---
