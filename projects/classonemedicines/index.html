@@ -14,7 +14,6 @@ Over the Counter Class I Medicines - Malcolm — Software Engineer
 <meta property="og:description" content>
 <meta property="og:url" content="/projects/classonemedicines/">
 <meta property="og:site_name" content="Malcolm — Software Engineer">
-<meta property="og:image" content="/projects/classonemedicines/assets/desktop-questionnaire.png">
 <meta property="og:image" content="/projects/classonemedicines/loxonin.jpg">
 <link rel=stylesheet href=/css/main.min.509760da50e9907e4e272f9189f62076a47442f24299e61e5237ef77e78c4224.css integrity="sha256-UJdg2lDpkH5OJy+RifYgdqR0QvJCmeYeUjfvd+eMQiQ=" crossorigin=anonymous media=screen>
 <link rel=stylesheet href=/css/form-reset.css integrity crossorigin=anonymous media=screen>
@@ -47,14 +46,7 @@ Back to Projects
 </div>
 <div class="container markdown top-pad">
 <div class=has-text-centered>
-<div class="owl-carousel owl-theme">
-<div class="item owl-height">
-<img src=/projects/classonemedicines/assets/desktop-questionnaire_hu8d4c4611ac640e9d88b4c7b36644486f_421267_1000x0_resize_box_3.png class=img-responsive alt=assets/desktop-questionnaire.png>
-</div>
-<div class="item owl-height">
 <img src=/projects/classonemedicines/loxonin_hub5bf5f160a1b048213d49601e4957b19_292429_1000x0_resize_q75_box.jpg class=img-responsive alt=loxonin.jpg>
-</div>
-</div>
 </div>
 <p>Back in 2016, there were not many easy and convenient ways to order over-the-counter class one medicines online in Japan.
 To explain briefly, class one is a special designation of drug, in which a pharmacist must approve the use of before sale.</p>
@@ -68,11 +60,17 @@ I am proud to have worked on a project that helps people to get the medical help
 <p>Legally, such a process can not be fully automated, precisely because a licensed pharmacist must be involved strictly before the drugs are distributed to the customer.
 In order to satisfy the legal requirements, Amazon Japan had to hire several pharmacists full time just for this project.
 What can be automated, however, is the creation and transmission of a patient&rsquo;s medical data for review by pharmacists.</p>
+<p><img src=images/ClassOneMedicines/desktop-questionnaire.png alt="Desktop Questionnaire"></p>
 <p>My direct involvement in this project was the creation of the mobile and desktop questionnaire page in which the customer can fill out the relevant and required medical information for pharmacist review.</p>
 <p>In order for the questionnaire to be successfully injected into the checkout pipeline, a new attribute had to be created for ASINs with the class one medicine designation.
 During the checkout process, if the customer has any products with the OVER_THE_COUNTER_CLASS_ONE attribute set to &ldquo;true&rdquo;, a hook is triggered and the customer is redirected to the medical questionnaire page.</p>
-<p>As you can see in the video below, the medical questionnaire has front-end JavaScript validation to mitigate mistakes before submission.
-Upon submission, although there are not the same kind of HIPPA-style laws in Japan as there are in the United States, it is necessary to comply with Amazon&rsquo;s customer data policy. Therefore, the customer&rsquo;s medical data was to be stored encrypted in a secured database.
+<video class=video-shortcode preload=auto controls>
+<source src=/mobile-questionnaire.mp4 type=video/mp4>
+There should have been a video here but your browser does not seem
+to support it.
+</video>
+<p>As you can see in the video above, the medical questionnaire has front-end JavaScript validation to mitigate mistakes before submission.
+Upon submission, although there are not the same kind of HIPPA-style laws in Japan as there are in the United States, it is still necessary to comply with Amazon&rsquo;s customer data policy. Therefore, the customer&rsquo;s medical data was to be stored encrypted in a secured database.
 As soon as the customer&rsquo;s medical data is submitted and becomes available in the database, the medical information can be seen by the pharmacists on their internal management system that our team created.
 If there are no concerns with the information provided by the customer, the pharmacists can approve the order and the medicines will be shipped to the customer.</p>
 <p>Just only a few days after we soft-launched this service, to our surprise, TechCrunch Japan reported on the new feature and questioned whether this is a sign that Amazon would become a huge player in online medicine space.
