@@ -4,7 +4,7 @@ date: 2023-04-21T19:24:44+09:00
 weight: 3 # Order in which to show this project on the home page
 external_link: "" # Optional external link instead of modal
 resources:
-    - src: "simple-graph.jpeg"
+    - src: "neo4j-graph.png"
       params:
           weight: 1 # Optional weighting for a specific image in this project folder
 ---
