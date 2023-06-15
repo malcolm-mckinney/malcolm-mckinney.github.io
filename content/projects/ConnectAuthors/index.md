@@ -4,7 +4,7 @@ date: 2023-04-21T19:24:44+09:00
 weight: 3 # Order in which to show this project on the home page
 external_link: "" # Optional external link instead of modal
 resources:
-    - src: plant.jpg
+    - src: "graph.png"
       params:
           weight: -100 # Optional weighting for a specific image in this project folder
 ---
@@ -56,6 +56,8 @@ The above code is a sample of how to create a relationship between author and cr
 
 I took some dummy data with 100 entities and created the below graph.
 
+![Initial Graph with Neo4J](images/ConnectAuthors/initial-neo4j.png)
+
 To create a connection between two authors, it is as easy as the following Neo4J statement:
 
 ```
@@ -67,6 +69,8 @@ RETURN a1, a2
 
 And the following graph is created:
 
+![Connected Graph with Neo4J](images/ConnectAuthors/connected-neo4j.png)
+
 To find all the connected components to an author, the following query is executed:
 
 ```
@@ -76,6 +80,8 @@ RETURN distinct a, connected
 ```
 
 And you can find the graph of the connected components below:
+
+![Connected Components Graph with Neo4J](images/ConnectAuthors/connected-components-neo4j.png)
 
 I made a presentation of my findings, which was well received by my department, however we later found out that the cost of Neo4J was too prohibitive for the budget and scope of the project.
 And so, I looked into a myriad of different graph databases, and I eventually came across JanusGraph.
@@ -212,7 +218,9 @@ db.vertices.aggregate( [
 ])
 ```
 
-You can play with the follow example using Mongo Playground [here](https://mongoplayground.net/p/t6b6DN6Qf43)
+![Example Graph With MongoDB](images/ConnectAuthors/example-graph-with-mongodb.png)
+
+You can play with the above example using Mongo Playground [here](https://mongoplayground.net/p/t6b6DN6Qf43)
 
 Unfortunately, due to poor economic conditions in the tech industry and restructuring in the company, the project was cancelled.
 Hearing this news was hard to hear after putting so much effort in the design, but I really learned so much about graph databases and I would be excited to one day use them in the future.

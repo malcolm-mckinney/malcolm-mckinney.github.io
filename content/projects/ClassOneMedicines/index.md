@@ -4,7 +4,7 @@ date: 2023-04-21T19:24:58+09:00
 weight: 1 # Order in which to show this project on the home page
 external_link: "" # Optional external link instead of modal
 resources:
-    - src: plant.jpg
+    - src: "loxonin.jpg"
       params:
           weight: -100 # Optional weighting for a specific image in this project folder
 ---
@@ -24,13 +24,17 @@ Legally, such a process can not be fully automated, precisely because a licensed
 In order to satisfy the legal requirements, Amazon Japan had to hire several pharmacists full time just for this project.
 What can be automated, however, is the creation and transmission of a patient's medical data for review by pharmacists.
 
+![Desktop Questionnaire](images/ClassOneMedicines/desktop-questionnaire.png)
+
 My direct involvement in this project was the creation of the mobile and desktop questionnaire page in which the customer can fill out the relevant and required medical information for pharmacist review.
 
 In order for the questionnaire to be successfully injected into the checkout pipeline, a new attribute had to be created for ASINs with the class one medicine designation.
 During the checkout process, if the customer has any products with the OVER_THE_COUNTER_CLASS_ONE attribute set to "true", a hook is triggered and the customer is redirected to the medical questionnaire page.
 
-As you can see in the video below, the medical questionnaire has front-end JavaScript validation to mitigate mistakes before submission.
-Upon submission, although there are not the same kind of HIPPA-style laws in Japan as there are in the United States, it is necessary to comply with Amazon's customer data policy. Therefore, the customer's medical data was to be stored encrypted in a secured database.
+{{< video src="/mobile-questionnaire.mp4" type="video/mp4" preload="auto" >}}
+
+As you can see in the video above, the medical questionnaire has front-end JavaScript validation to mitigate mistakes before submission.
+Upon submission, although there are not the same kind of HIPPA-style laws in Japan as there are in the United States, it is still necessary to comply with Amazon's customer data policy. Therefore, the customer's medical data was to be stored encrypted in a secured database.
 As soon as the customer's medical data is submitted and becomes available in the database, the medical information can be seen by the pharmacists on their internal management system that our team created.
 If there are no concerns with the information provided by the customer, the pharmacists can approve the order and the medicines will be shipped to the customer.
 
