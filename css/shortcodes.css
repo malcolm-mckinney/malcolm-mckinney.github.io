@@ -1,4 +1,5 @@
 .video-shortcode {
-    max-width: 100%;
-    height: auto;
+    width: 320px;
+    height: 240px;
+    text-align: center
 }
