@@ -10,16 +10,16 @@ resources:
 ---
 In 2021, one of the pain points my new team I joined was having was that sticker, emoji, and theme creators needed a way to link their accounts for the purpose of giving recommendations to customers.
 
-For example, let's consider the company 'Sanrio' which owns the intellectual property of Hello Kitty, Gudetama, and Peanuts.
+For example, let's consider the company ['Sanrio'](https://store.line.me/stickershop/author/32/en) which owns the intellectual property of [Hello Kitty](https://store.line.me/stickershop/author/344742/en), [Gudetama](https://store.line.me/search/en?q=gudetama), and [Peanuts](https://store.line.me/stickershop/author/254193/en?page=2).
 Whenever someone is interested in Hello Kitty stickers, we may want to also want to recommend to the customer other Sanrio products such as Gudetama.
-In addition, we can find many examples of collaborations between intellectual properties across different companies, such as the Gundam or LINE friends.
+In addition, we can find many examples of collaborations between intellectual properties across different companies, such as the [Gundam](https://store.line.me/stickershop/product/15422/en) or [LINE friends](https://store.line.me/stickershop/product/10048/en).
 When a customer access the collaboration page of two or more intellectual properties, we want to give recommendations based upon each individual intellectual property.
 
 A major hurdle we need to overcome was that the data for official (large corporations) and creators (smaller, self-published enterprises) were stored in two different databases: SQL and MongoDB respectively.
 Therefore, we agreed that we wanted to use a third database whose data is derived from the other two databases.
 
 Given this ambiguous context, I started to look into graph databases, because they seemed to be among the best technologies that would allow us to connect entities together while giving us the flexibility to change the schema if need be.
-I first looked into Neo4J, which was the one of the first graph databases that comes up when you search on Google.
+I first looked into [Neo4J](https://neo4j.com/), which was the one of the first graph databases that comes up when you search on Google.
 
 I was quickly able to write some code with some dummy data and create a graph representation of that data, which you can find below.
 
@@ -84,8 +84,8 @@ And you can find the graph of the connected components below:
 ![Connected Components Graph with Neo4J](images/ConnectAuthors/connected-components-neo4j.png)
 
 I made a presentation of my findings, which was well received by my department, however we later found out that the cost of Neo4J was too prohibitive for the budget and scope of the project.
-And so, I looked into a myriad of different graph databases, and I eventually came across JanusGraph.
-Over a period of a month, I created a rough system architecture using JanusGraph, created a graphical representation data using Gelphi, and wrote and delivered another presentation about my findings.
+And so, I looked into a myriad of different graph databases, and I eventually came across [JanusGraph](https://janusgraph.org/).
+Over a period of a month, I created a rough system architecture using JanusGraph, created a graphical representation data using [Gelphi](https://gephi.org/), and wrote and delivered another presentation about my findings.
 
 ```
 public static void createCreatorAuthorRelationship(JanusGraph graph, final String creatorId, final String authorId, final AuthorType type) {
@@ -162,11 +162,11 @@ sg.io(IoCore.graphml()).writeGraph("subgraph.xml");
 
 Again this presentation was well received, however an internal security review of a new technology such as JanusGraph would take longer than the expected time to implement(at least six months), so this idea was scrapped.
 
-Going back to the drawing board, I was pushed to solve the same problem using technologies already used within the company, so I looked further into $graphLookup functionality in mongoDB.
+Going back to the drawing board, I was pushed to solve the same problem using technologies already used within the company, so I looked further into [$graphLookup functionality in mongoDB](https://www.mongodb.com/docs/manual/reference/operator/aggregation/graphLookup/).
 
-Within a couple of weeks, I created a new architecture using mongoDB and wrote a detailed design document.
+Within a couple of weeks, I created a new architecture using mongoDB by referencing [this website](https://www.mongodb.com/databases/mongodb-graph-database) and [these slides](https://www.slideshare.net/mongodb/webinar-working-with-graph-data-in-mongodb) and wrote a detailed design document.
 
-I defined the schema for vertex and edge below:
+In that new document, defined the schema for vertex and edge below:
 ```
 Vertex {
     labels: ["official", "sticker"],
