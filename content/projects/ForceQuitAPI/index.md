@@ -37,23 +37,22 @@ With this process id, then we can run this script to kill the process tree using
 self=""
 
 while getopts "p:" opt; do
-case ${opt} in
-p ) self="${OPTARG}" ;;
-esac
+  case ${opt} in
+    p ) self="${OPTARG}" ;;
+  esac
 done
 
 function kill_process_tree() {
 
-local generation=$(pgrep -P "${1}");
+  local generation=$(pgrep -P "${1}");
 
-for child in "${generation}"
-do
-if [[ "${child}" ]]; then
-kill_process_tree "${child}";
-fi
-done
+  for child in "${generation}" do
+    if [[ "${child}" ]]; then
+      kill_process_tree "${child}";
+    fi
+  done
 
-kill "${1}";
+  kill "${1}";
 }
 
 kill_process_tree "${self}"
