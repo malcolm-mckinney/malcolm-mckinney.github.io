@@ -29,7 +29,8 @@ What can be automated, however, is the creation and transmission of a patient's 
 My direct involvement in this project was the creation of the mobile and desktop questionnaire page in which the customer can fill out the relevant and required medical information for pharmacist review.
 
 In order for the questionnaire to be successfully injected into the checkout pipeline, a new attribute had to be created for ASINs with the class one medicine designation.
-During the checkout process, if the customer has any products with the OVER_THE_COUNTER_CLASS_ONE attribute set to "true", a hook is triggered and the customer is redirected to the medical questionnaire page.
+During the checkout process, if the customer has any products with the [OVER_THE_COUNTER_CLASS_ONE](https://www.amazon.co.jp/s?i=hpc&rh=n%3A2505532051%2Cp_n_feature_twenty_browse-bin%3A2636214051&language=en) attribute set to "true", a hook is triggered and the customer is redirected to the medical questionnaire page.
+
 
 {{< video src="/mobile-questionnaire.mp4" type="video/mp4" preload="auto" >}}
 
