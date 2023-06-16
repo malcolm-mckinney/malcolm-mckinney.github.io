@@ -222,23 +222,22 @@ With this process id, then we can run this script to kill the process tree using
 self=&quot;&quot;
 
 while getopts &quot;p:&quot; opt; do
-case ${opt} in
-p ) self=&quot;${OPTARG}&quot; ;;
-esac
+  case ${opt} in
+    p ) self=&quot;${OPTARG}&quot; ;;
+  esac
 done
 
 function kill_process_tree() {
 
-local generation=$(pgrep -P &quot;${1}&quot;);
+  local generation=$(pgrep -P &quot;${1}&quot;);
 
-for child in &quot;${generation}&quot;
-do
-if [[ &quot;${child}&quot; ]]; then
-kill_process_tree &quot;${child}&quot;;
-fi
-done
+  for child in &quot;${generation}&quot; do
+    if [[ &quot;${child}&quot; ]]; then
+      kill_process_tree &quot;${child}&quot;;
+    fi
+  done
 
-kill &quot;${1}&quot;;
+  kill &quot;${1}&quot;;
 }
 
 kill_process_tree &quot;${self}&quot;
