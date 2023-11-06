@@ -66,3 +66,4 @@ I introduced a simple process service in the remote build service repository, wh
 With the processId, we can use the above script to finally kill the process.
 
 In conclusion, I decreased workload of manual operations on administrators as well as gave more flexibility and control to developers' deployment environment by providing a force quit feature.
+
